@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аналог Telegram</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container" style="display: none;">
+        <div class="messages"></div>
+        <div class="message-input-container">
+            <input type="text" class="message-input" placeholder="Введите сообщение...">
+            <button class="send-button">Отправить</button>
+        </div>
+    </div>
+    <div class="registration-container">
+        <input type="text" class="username-input" placeholder="Введите имя пользователя..." required>
+        <input type="email" class="email-input" placeholder="Введите электронную почту..." required>
+        <select class="avatar-select">
+            <option value="">Выберите аватар</option>
+            <option value="avatar1.png">Аватар 1</option>
+            <option value="avatar2.png">Аватар 2</option>
+            <option value="avatar3.png">Аватар 3</option>
+        </select>
+        <button class="register-button">Зарегистрироваться</button>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
